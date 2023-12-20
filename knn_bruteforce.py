@@ -41,6 +41,6 @@ with open(os.path.join(args.output_folder, "random.csv"), "w") as outfile:
 			x = heappop(knn_dist)
 			if x.obj!=el[0]:
 				sorted_knn.append(x.obj)
-		txt = "%d,%s\n" % (el[0], sorted_knn)
+		txt = "%d,%s\n" % (el[0], sorted_knn[::-1])
 		outfile.write(txt)
 		
