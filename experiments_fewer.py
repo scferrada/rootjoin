@@ -19,6 +19,7 @@ import time
 
 for c in [2,3,5,7,10]:
 	for k in [1, 4, 8, 16, 32]:
+		print(c, k)
 		for i in range(10):
 			print("running %d experiment "%i)
 			start = time.time()
