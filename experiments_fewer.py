@@ -1,4 +1,4 @@
-import rootjoin as rj
+import rootjoin_fewer as rj
 import numpy as np
 import argparse, os
 

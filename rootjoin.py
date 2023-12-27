@@ -92,11 +92,6 @@ def rootjoin(data, k, c):
             distances = np.sum(np.abs(data[target, 1:] - row[1:]), axis=1)
             idx = np.argpartition(distances, k+1)[:k+1]
             knn = data[target][idx]
-            print(k)
-            print(row)
-            print(knn)
-            print(knn.shape)
-            exit(0)
             for d, e in enumerate(knn):
                 if int(e[0])==int(row[0]):
                     continue
